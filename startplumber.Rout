@@ -16,55 +16,10 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 Type 'q()' to quit R.
 
 > library(plumber)
-> r <- plumb("date/plumber.R")
-> r$run(port = 8000)
-Running plumber API at http://127.0.0.1:8000
-Running swagger Docs at http://127.0.0.1:8000/__docs__/
-<simpleError: lexical error: invalid char in json text.
-                                       '{"datasetId":"2jSzovGXJL0lmYBV
-                     (right here) ------^
->
+> #r <- plumb("date/plumber.R")
+> r <- plumb("getLipds/plumber.R")
+> r$run(port = 8001)
+Running plumber API at http://127.0.0.1:8001
+Running swagger Docs at http://127.0.0.1:8001/__docs__/
 Warning: The `size` argument of `element_line()` is deprecated as of ggplot2 3.4.0.
 ℹ Please use the `linewidth` argument instead.
-Warning in min(x) : no non-missing arguments to min; returning Inf
-Warning in max(x) : no non-missing arguments to max; returning -Inf
-Warning in min(diff(unique_loc)) :
-  no non-missing arguments to min; returning Inf
-Warning: Removed 483096 rows containing non-finite values (`stat_align()`).
-Warning: Removed 1 rows containing missing values (`geom_text()`).
-Warning in min(x) : no non-missing arguments to min; returning Inf
-Warning in max(x) : no non-missing arguments to max; returning -Inf
-Warning in min(diff(unique_loc)) :
-  no non-missing arguments to min; returning Inf
-Warning: Removed 8840 rows containing non-finite values (`stat_align()`).
-Warning: Removed 1 rows containing missing values (`geom_text()`).
-Warning in min(x) : no non-missing arguments to min; returning Inf
-Warning in max(x) : no non-missing arguments to max; returning -Inf
-Warning in min(diff(unique_loc)) :
-  no non-missing arguments to min; returning Inf
-Warning: Removed 110680 rows containing non-finite values (`stat_align()`).
-Warning: Removed 1 rows containing missing values (`geom_text()`).
-Warning in min(x) : no non-missing arguments to min; returning Inf
-Warning in max(x) : no non-missing arguments to max; returning -Inf
-Warning in min(diff(unique_loc)) :
-  no non-missing arguments to min; returning Inf
-Warning: Removed 110680 rows containing non-finite values (`stat_align()`).
-Warning: Removed 1 rows containing missing values (`geom_text()`).
-Warning in min(x) : no non-missing arguments to min; returning Inf
-Warning in max(x) : no non-missing arguments to max; returning -Inf
-Warning in min(diff(unique_loc)) :
-  no non-missing arguments to min; returning Inf
-Warning: Removed 2793 rows containing non-finite values (`stat_align()`).
-Warning: Removed 1 rows containing missing values (`geom_text()`).
-Warning in min(x) : no non-missing arguments to min; returning Inf
-Warning in max(x) : no non-missing arguments to max; returning -Inf
-Warning in min(diff(unique_loc)) :
-  no non-missing arguments to min; returning Inf
-Warning: Removed 1273400 rows containing non-finite values (`stat_align()`).
-Warning: Removed 1 rows containing missing values (`geom_text()`).
-Warning in min(x) : no non-missing arguments to min; returning Inf
-Warning in max(x) : no non-missing arguments to max; returning -Inf
-Warning in min(diff(unique_loc)) :
-  no non-missing arguments to min; returning Inf
-Warning: Removed 1273400 rows containing non-finite values (`stat_align()`).
-Warning: Removed 1 rows containing missing values (`geom_text()`).
